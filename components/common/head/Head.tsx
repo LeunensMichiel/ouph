@@ -10,10 +10,11 @@ export const Head: FC = () => {
       <DefaultSeo
         titleTemplate="%s || ouph"
         defaultTitle="ouph"
-        description="ouph."
+        description="Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design."
         openGraph={{
           title: 'ouph',
-          description: 'ouph.',
+          description:
+            'Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design.',
           type: 'website',
           url,
           locale: 'en',

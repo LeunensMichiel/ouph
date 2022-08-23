@@ -8,10 +8,11 @@ const Home: NextPage = () => {
     <>
       <NextSeo
         title="studio"
-        description=""
+        description="Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design."
         openGraph={{
           title: 'studio',
-          description: '',
+          description:
+            'Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design.',
         }}
       />
       <section className={styles.landing}>
