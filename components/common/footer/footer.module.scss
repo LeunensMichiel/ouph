@@ -1,0 +1,26 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: end;
+  padding: 2.5rem 0;
+
+  svg {
+    height: 4.5rem;
+  }
+}
+
+.clients {
+  justify-self: start;
+  display: grid;
+  line-height: 1.1;
+}
+
+.client {
+  font-family: var(--font-family-alt);
+}
+
+.socials {
+  justify-self: end;
+}

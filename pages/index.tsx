@@ -1,16 +1,16 @@
-import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import styles from './styles/index.module.scss';
-import { Logo } from '../components/common';
+import { Layout, Logo } from '../components/common';
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <NextSeo
-        title="studio"
+        title="Ouph!"
+        titleTemplate="%s"
         description="Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design."
         openGraph={{
-          title: 'studio',
+          title: 'Ouph!',
           description:
             'Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design.',
         }}
@@ -37,3 +37,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+Home.Layout = Layout;

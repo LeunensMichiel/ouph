@@ -34,7 +34,6 @@
 
 html {
   height: 100%;
-  //   font-size: var(--font-size);
 }
 
 html,
@@ -48,10 +47,9 @@ body {
   position: relative;
   height: 100%;
   margin: 0;
+  font-size: 2rem;
 }
 
 #__next {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
