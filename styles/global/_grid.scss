@@ -1,0 +1,41 @@
+@use 'sass:map';
+@use '../mixins';
+
+.container {
+  width: 100%;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include mixins.breakpoint-up(md) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @include mixins.breakpoint-up(lg) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.py-container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  &--sm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @include mixins.breakpoint-up(md) {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    &--sm {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+}

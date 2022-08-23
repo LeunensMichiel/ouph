@@ -1,6 +1,7 @@
 // Cross-browser reset
 @use 'reset';
 @use 'typography';
+@use 'grid';
 @use '../mixins';
 
 :root {

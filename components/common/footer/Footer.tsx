@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import { clsx } from 'clsx';
 import styles from './footer.module.scss';
 import { Logo } from '../logo/Logo';
 export const Footer: FC = () => {
   return (
-    <footer className={styles.root}>
+    <footer className={clsx(styles.root, 'container py-container--sm')}>
       <div className={styles.clients}>
         <span>Other clients include:</span>
         <span className={styles.client}>De Vaartkapoen</span>
