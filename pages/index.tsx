@@ -14,12 +14,23 @@ const Home: NextPage = () => {
           description: '',
         }}
       />
-      <div className={styles.landing}>
+      <section className={styles.landing}>
+        <video
+          playsInline
+          autoPlay
+          muted
+          poster="/assets/card.jpg"
+          loop
+          preload="auto"
+          className={styles.landing__video}
+        >
+          <source src="/assets/landing_video.mp4" type="video/mp4" />
+        </video>
         <div className={styles.landing__inner}>
           <span className={styles.landing__text}>un website de</span>
           <Logo />
         </div>
-      </div>
+      </section>
     </>
   );
 };
