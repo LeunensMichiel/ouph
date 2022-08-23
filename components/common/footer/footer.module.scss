@@ -22,4 +22,12 @@
 
 .socials {
   justify-self: end;
+  text-align: end;
+  width: 100%;
+  color: #ff5800;
+  text-decoration: none;
+
+  &--hover {
+    text-decoration: underline;
+  }
 }

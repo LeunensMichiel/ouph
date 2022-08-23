@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="Ouph!"
+        title="ouph!"
         titleTemplate="%s"
         description="Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design."
         openGraph={{
