@@ -1,6 +1,6 @@
 .landing {
   height: 100%;
-  background: #eeff33;
+  background: #c4fe00;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -9,8 +9,12 @@
 .landing__inner {
   display: grid;
   justify-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .landing__text {
   display: inline-block;
+  font-size: 2rem;
+  color: #ffffff;
 }

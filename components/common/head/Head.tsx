@@ -8,23 +8,22 @@ export const Head: FC = () => {
   return (
     <>
       <DefaultSeo
-        title="OUPH"
-        titleTemplate="%s | OUPH"
-        defaultTitle="OUPH"
+        titleTemplate="%s || ouph"
+        defaultTitle="ouph"
         description="ouph."
         openGraph={{
-          title: 'OUPH',
+          title: 'ouph',
           description: 'ouph.',
           type: 'website',
           url,
           locale: 'en',
-          site_name: 'OUPH',
+          site_name: 'ouph',
           images: [
             {
               url: '/assets/card.jpg',
               width: 1200,
               height: 630,
-              alt: 'OUPH',
+              alt: 'ouph',
             },
           ],
         }}
@@ -34,33 +33,30 @@ export const Head: FC = () => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/meta/apple-touch-icon.png?v=1"
+          href="/meta/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/meta/favicon-32x32.png?v=1"
+          href="/meta/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/meta/favicon-16x16.png?v=1"
+          href="/meta/favicon-16x16.png"
         />
-        <link rel="manifest" href="/meta/site.webmanifest?v=1" />
+        <link rel="manifest" href="/meta/site.webmanifest" />
         <link
           rel="mask-icon"
-          href="/meta/safari-pinned-tab.svg?v=1"
-          color="#de350b"
+          href="/meta/safari-pinned-tab.svg"
+          color="#ff5800"
         />
-        <link rel="shortcut icon" href="/meta/favicon.ico?v=1" />
-        <meta name="msapplication-TileColor" content="#de350b" />
-        <meta
-          name="msapplication-config"
-          content="/meta/browserconfig.xml?v=1"
-        />
-        <meta name="theme-color" content="#de350b" />
+        <link rel="shortcut icon" href="/meta/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#f4f5ff" />
+        <meta name="msapplication-config" content="/meta/browserconfig.xml" />
+        <meta name="theme-color" content="#ff5800" />
       </NextHead>
     </>
   );
