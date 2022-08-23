@@ -8,24 +8,23 @@ export const Head: FC = () => {
   return (
     <>
       <DefaultSeo
-        title="Zomaar Zomert 2022"
-        titleTemplate="%s | Zomaar Zomert"
-        defaultTitle="Zomaar Zomert 2022"
-        description="Zomaar Zomert is a free festival in the heart of Itterbeek, at the Sint-Anna church. The whole last weekend of July you can enjoy fresh drinks, numerous performances & activities. You're sure to have an extraordinary summer weekend. ☀🚀"
+        title="OUPH"
+        titleTemplate="%s | OUPH"
+        defaultTitle="OUPH"
+        description="ouph."
         openGraph={{
-          title: 'Zomaar Zomert 2022',
-          description:
-            "Zomaar Zomert is a free festival in the heart of Itterbeek, at the Sint-Anna church. The whole last weekend of July you can enjoy fresh drinks, numerous performances & activities. You're sure to have an extraordinary summer weekend. ☀🚀",
+          title: 'OUPH',
+          description: 'ouph.',
           type: 'website',
           url,
           locale: 'en',
-          site_name: 'Zomaar Zomert',
+          site_name: 'OUPH',
           images: [
             {
               url: '/assets/card.jpg',
               width: 1200,
               height: 630,
-              alt: 'Zomaar Zomert',
+              alt: 'OUPH',
             },
           ],
         }}

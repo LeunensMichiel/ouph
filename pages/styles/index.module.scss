@@ -1,0 +1,16 @@
+.landing {
+  height: 100%;
+  background: #eeff33;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing__inner {
+  display: grid;
+  justify-items: center;
+}
+
+.landing__text {
+  display: inline-block;
+}

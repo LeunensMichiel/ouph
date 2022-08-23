@@ -1,17 +1,22 @@
-// /* oswald-700 - latin */
-// @font-face {
-//   font-family: 'Oswald';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-display: optional;
-//   src: local(''), url('/fonts/oswald-700.woff2') format('woff2');
-// }
+@font-face {
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url('/fonts/neue_haas_unica_regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''), url('/fonts/neue_haas_unica_medium.woff2') format('woff2');
+}
 
-// /* open-sans-600 - latin */
-// @font-face {
-//   font-family: 'Open Sans';
-//   font-style: normal;
-//   font-weight: 600;
-//   font-display: optional;
-//   src: local(''), url('/fonts/open-sans-600.woff2') format('woff2');
-// }
+@font-face {
+  font-family: 'Cooper Std';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url('/fonts/cooper_std_black.woff2') format('woff2');
+}
