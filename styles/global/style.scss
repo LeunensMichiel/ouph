@@ -20,18 +20,20 @@
   --line-height-small: 1.5;
 
   // Spacing and Radii
-  --border-radius: 0;
+  --border-radius: 0.5rem;
 
   // Widths
   --reading-width: clamp(45ch, 50%, 80ch);
 
   --transition-timing: cubic-bezier(0.16, 1, 0.3, 1);
   --transition-duration: 500ms;
+
+  --color-brand: #ff5800;
 }
 
 ::selection {
   color: #ffffff;
-  background-color: #ff5800;
+  background-color: var(--color-brand);
 }
 
 html {
@@ -40,7 +42,7 @@ html {
 
 html,
 body {
-  color: #ff5800;
+  color: var(--color-brand);
   background-color: #f4f5ff;
 }
 
@@ -54,4 +56,32 @@ body {
 
 #__next {
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height-header);
+}
+
+p,
+small,
+li,
+strong,
+em,
+blockquote,
+q,
+mark,
+ins,
+del,
+sup,
+sub,
+i,
+b {
+  font-family: var(--font-family-body);
+  line-height: var(--line-height-paragraph);
+  white-space: pre-line;
 }

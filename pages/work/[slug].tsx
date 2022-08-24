@@ -8,7 +8,7 @@ type WorkPageProps = {
 };
 
 const WorkPage = ({ errors, item }: WorkPageProps) => {
-  return <div>{item?.name}</div>;
+  return <div>{item?.title}</div>;
 };
 
 export default WorkPage;

@@ -24,8 +24,9 @@
   justify-self: end;
   text-align: end;
   width: 100%;
-  color: #ff5800;
+  color: var(--color-brand);
   text-decoration: none;
+  line-height: 1;
 
   &--hover {
     text-decoration: underline;
