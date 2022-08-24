@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react';
 import { clsx } from 'clsx';
+import Link from 'next/link';
 import styles from './footer.module.scss';
 import { Logo } from '../logo/Logo';
 export const Footer: FC = () => {
@@ -14,7 +15,11 @@ export const Footer: FC = () => {
         <span className={styles.client}>JhMj DAR</span>
         <span className={styles.client}>Otto Kintet</span>
       </div>
-      <Logo />
+      <Link href="/">
+        <a>
+          <Logo />
+        </a>
+      </Link>
       <a
         onMouseEnter={() => setSocialText('@ouph.studio')}
         onTouchStart={() => setSocialText('@ouph.studio')}

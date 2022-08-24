@@ -1,0 +1,25 @@
+.root {
+  width: 100%;
+}
+
+.homepage {
+  position: absolute;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-contact {
+  color: #ffffff;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  text-decoration: none;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+}
