@@ -16,7 +16,7 @@
   --font-family-alt: 'Cooper Std', var(--font-family-system);
 
   --line-height-header: 1.125;
-  --line-height-paragraph: 1.75;
+  --line-height-paragraph: 1.25;
   --line-height-small: 1.5;
 
   // Spacing and Radii
@@ -65,6 +65,8 @@ h4,
 h5,
 h6 {
   line-height: var(--line-height-header);
+  font-weight: 400;
+  font-family: var(--font-family-alt);
 }
 
 p,

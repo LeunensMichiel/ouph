@@ -1,6 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Image from 'next/future/image';
 import { Layout } from '../../components/common';
 import data from '../../public/data.json';
+import styles from '../styles/workpage.module.scss';
 
 type WorkPageProps = {
   item?: typeof data[0];
@@ -8,7 +10,32 @@ type WorkPageProps = {
 };
 
 const WorkPage = ({ errors, item }: WorkPageProps) => {
-  return <div>{item?.title}</div>;
+  return (
+    <section className="container py-container--sm">
+      <div className={styles.root}>
+        <article>
+          <h1 className={styles.title}>{item?.title}</h1>
+          <span className={styles.year}>{item?.year}</span>
+          <p className={styles.description}>{item?.description}</p>
+        </article>
+        <aside className={styles.images}>
+          {item?.images?.map((url, n) => (
+            <Image
+              className={styles.image}
+              src={url}
+              alt={`${item?.title} ${item?.subtitle} - image ${n + 1}`}
+              priority
+              width={400}
+              height={400}
+              quality={100}
+              key={url}
+            />
+          ))}
+        </aside>
+      </div>
+      <span>Thanks for scrolling till the end :)</span>
+    </section>
+  );
 };
 
 export default WorkPage;
