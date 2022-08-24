@@ -6,6 +6,12 @@ import { Layout, Logo } from '../components/common';
 import data from '../public/data.json';
 import { Card } from '../components/ui';
 
+const breakpointColumns = {
+  default: 3,
+  '1023': 2,
+  '639': 1,
+};
+
 type HomePageProps = {
   items?: Array<typeof data[0]>;
   errors?: string;
@@ -44,7 +50,7 @@ const Home = ({ errors, items }: HomePageProps) => {
       <section className="container py-container">
         {errors && <p>Error displaying items</p>}
         <Masonry
-          breakpointCols={3}
+          breakpointCols={breakpointColumns}
           className="masonry-grid"
           columnClassName="masonry-grid_column"
         >
