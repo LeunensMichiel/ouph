@@ -1,3 +1,5 @@
+@use '../../../styles/mixins';
+
 .card {
   display: block;
   width: 100%;
@@ -23,23 +25,35 @@
   display: grid;
   align-content: center;
   justify-items: center;
+  gap: 0.5rem;
   color: #ffffff;
   opacity: 0;
   transition: opacity 0.2s cubic-bezier(0.17, 0.84, 0.44, 1);
   padding: 2rem;
   text-align: center;
+
+  @include mixins.breakpoint-up(md) {
+    padding: 1.5rem;
+  }
+
+  @include mixins.breakpoint-up(lg) {
+    padding: 2rem;
+  }
 }
 
 .card__overlay-title {
   font-family: var(--font-family-alt);
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0;
   line-height: 1;
+
+  @include mixins.breakpoint-up(md) {
+    font-size: 3.5rem;
+  }
 }
 
 .card__overlay-subtitle {
-  font-size: 2rem;
   line-height: 1;
 }
 

@@ -51,7 +51,11 @@ body {
   position: relative;
   height: 100%;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
+
+  @include mixins.breakpoint-up(md) {
+    font-size: 2rem;
+  }
 }
 
 #__next {

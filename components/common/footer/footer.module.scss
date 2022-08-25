@@ -1,19 +1,31 @@
+@use '../../../styles/mixins';
+
 .root {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   justify-items: center;
   align-items: end;
+  gap: 3rem;
 
   svg {
     height: 4.5rem;
   }
+
+  @include mixins.breakpoint-up(lg) {
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .clients {
-  justify-self: start;
   display: grid;
   line-height: 1.1;
+  text-align: center;
+
+  @include mixins.breakpoint-up(lg) {
+    justify-self: start;
+    text-align: start;
+  }
 }
 
 .client {
@@ -21,14 +33,18 @@
 }
 
 .socials {
-  justify-self: end;
-  text-align: end;
+  text-align: center;
   width: 100%;
   color: var(--color-brand);
-  text-decoration: none;
+  text-decoration: underline;
   line-height: 1;
 
-  &--hover {
-    text-decoration: underline;
+  @include mixins.breakpoint-up(lg) {
+    justify-self: end;
+    text-align: end;
+    text-decoration: none;
+    &--hover {
+      text-decoration: underline;
+    }
   }
 }

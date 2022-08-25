@@ -1,21 +1,39 @@
+@use '../../styles/mixins';
+
 .root {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
+
+  @include mixins.breakpoint-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .title {
-  font-size: 9.375rem;
+  font-size: 4rem;
+
+  @include mixins.breakpoint-up(lg) {
+    font-size: 7.75rem;
+  }
+
+  @include mixins.breakpoint-up(xl) {
+    font-size: 9.375rem;
+  }
 }
 
 .year {
-  font-size: 3rem;
+  @include mixins.breakpoint-up(lg) {
+    font-size: 3rem;
+  }
 }
 
 .description {
   font-weight: 500;
-  font-size: 3rem;
+
+  @include mixins.breakpoint-up(lg) {
+    font-size: 3rem;
+  }
 }
 
 .images {
@@ -31,4 +49,14 @@
 }
 
 .footnote {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+
+  @include mixins.breakpoint-up(md) {
+    font-size: inherit;
+  }
+  @include mixins.breakpoint-up(xl) {
+    margin-top: 0.25rem;
+  }
 }

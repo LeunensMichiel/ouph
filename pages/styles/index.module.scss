@@ -1,3 +1,5 @@
+@use '../../styles/mixins';
+
 .landing {
   min-height: 100vh;
   background: #e434ff;
@@ -16,8 +18,12 @@
 
   svg {
     width: 100%;
-    max-width: 400px;
+    max-width: 260px;
     height: auto;
+  }
+
+  @include mixins.breakpoint-up(md) {
+    max-width: 400px;
   }
 }
 
