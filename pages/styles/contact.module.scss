@@ -1,0 +1,36 @@
+@use '../../styles/mixins';
+
+.contact {
+  display: grid;
+  gap: 3rem;
+
+  @include mixins.breakpoint-up(md) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.contact__inner {
+  display: grid;
+  gap: 2rem;
+  padding: 0 3rem;
+  align-content: start;
+
+  h1 {
+    font-size: 4rem;
+
+    @include mixins.breakpoint-up(lg) {
+      font-size: 6.5rem;
+    }
+
+    @include mixins.breakpoint-up(xl) {
+      font-size: 7.5rem;
+    }
+  }
+}
+
+.contact__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}

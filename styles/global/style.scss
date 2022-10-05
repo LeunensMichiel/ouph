@@ -43,7 +43,7 @@ html {
 html,
 body {
   color: var(--color-brand);
-  background-color: #f4f5ff;
+  background-color: #212121;
 }
 
 body {
@@ -90,4 +90,9 @@ b {
   font-family: var(--font-family-body);
   line-height: var(--line-height-paragraph);
   white-space: pre-line;
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: underline;
 }
