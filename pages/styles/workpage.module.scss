@@ -3,10 +3,14 @@
 .root {
   display: grid;
   gap: 3rem;
-  min-height: 100vh;
+  min-height: 80vh;
 
   @include mixins.breakpoint-up(md) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mixins.breakpoint-up(xl) {
+    gap: 5rem;
   }
 }
 
@@ -17,14 +21,19 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 2.5rem;
+  width: 100%;
 
-  @include mixins.breakpoint-up(lg) {
-    font-size: 7.75rem;
+  @include mixins.breakpoint-up(xs) {
+    font-size: 3rem;
   }
 
-  @include mixins.breakpoint-up(xl) {
-    font-size: 9.375rem;
+  @include mixins.breakpoint-up(md) {
+    font-size: 3.5rem;
+  }
+
+  @include mixins.breakpoint-up(lg) {
+    font-size: min(7.5rem, 6.6vw);
   }
 }
 
@@ -45,6 +54,7 @@
 
 .images {
   display: grid;
+  align-content: start;
   gap: 2rem;
 }
 

@@ -17,11 +17,14 @@ export const Navbar: FC<NavbarProps> = ({ isHomePage }) => {
             <a className={styles['link-contact']}>contact</a>
           </Link>
         ) : (
-          <Link href="/">
-            <a>
-              <Logo className={styles.logo} />
-            </a>
-          </Link>
+          <>
+            <Link href="/">↽ go back</Link>
+            <Link href="/">
+              <a>
+                <Logo className={styles.logo} />
+              </a>
+            </Link>
+          </>
         )}
       </nav>
     </header>

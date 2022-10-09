@@ -14,10 +14,6 @@ export const Card: FC<CardProps> = ({ image, subtitle, title, to }) => {
   return (
     <Link href={`/work/${to}`}>
       <a className={styles.card}>
-        <div className={styles.card__overlay}>
-          <h2 className={styles['card__overlay-title']}>{title}</h2>
-          <span className={styles['card__overlay-subtitle']}>{subtitle}</span>
-        </div>
         <Image
           className={styles.card__image}
           src={image}
@@ -28,6 +24,10 @@ export const Card: FC<CardProps> = ({ image, subtitle, title, to }) => {
           height={400}
           quality={100}
         />
+        <div className={styles.card__overlay}>
+          <h2 className={styles['card__overlay-title']}>{title}</h2>
+          <span className={styles['card__overlay-subtitle']}>{subtitle}</span>
+        </div>
       </a>
     </Link>
   );

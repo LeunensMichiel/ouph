@@ -3,18 +3,29 @@ import { clsx } from 'clsx';
 import Link from 'next/link';
 import styles from './footer.module.scss';
 import { Logo } from '../logo/Logo';
-export const Footer: FC = () => {
+
+type FooterProps = {
+  isHomePage: boolean;
+};
+
+export const Footer: FC<FooterProps> = ({ isHomePage }) => {
   const [socialText, setSocialText] = useState("we're also on instagram :)");
 
   return (
-    <footer className={clsx(styles.root, 'container py-container--sm')}>
-      <div className={styles.clients}>
-        <span>Other clients include:</span>
-        <span className={styles.client}>De Vaartkapoen</span>
-        <span className={styles.client}>Lord Byron</span>
-        <span className={styles.client}>JhMj DAR</span>
-        <span className={styles.client}>Otto Kintet</span>
-      </div>
+    <footer
+      className={clsx(styles.root, 'container py-container--sm', {
+        [styles['root--homepage']]: isHomePage,
+      })}
+    >
+      {isHomePage && (
+        <div className={styles.clients}>
+          <span>Other clients include:</span>
+          <span className={styles.client}>De Vaartkapoen</span>
+          <span className={styles.client}>Lord Byron</span>
+          <span className={styles.client}>JhMj DAR</span>
+          <span className={styles.client}>Otto Kintet</span>
+        </div>
+      )}
       <Link href="/">
         <a>
           <Logo />

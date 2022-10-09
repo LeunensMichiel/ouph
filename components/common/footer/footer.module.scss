@@ -8,12 +8,22 @@
   gap: 3rem;
 
   svg {
+    width: auto;
     height: 4.5rem;
   }
 
   @include mixins.breakpoint-up(lg) {
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &--homepage {
+    @include mixins.breakpoint-up(lg) {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 

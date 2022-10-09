@@ -15,7 +15,7 @@ export const Layout: FC<Props> = ({ children }) => {
     <>
       <Navbar isHomePage={isHomePage} />
       <main className={styles.root}>{children}</main>
-      <Footer />
+      <Footer isHomePage={isHomePage} />
     </>
   );
 };
