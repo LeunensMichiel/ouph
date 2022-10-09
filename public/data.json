@@ -1,7 +1,7 @@
 [
   {
     "title": "Juicy",
-    "subtitle": "merchandise design",
+    "subtitle": "merchandise",
     "slug": "juicy",
     "year": "2022",
     "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
@@ -10,95 +10,58 @@
       "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
     },
     "images": [
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
-      "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-      "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      "/assets/juicy/1.png",
+      "/assets/juicy/2.png",
+      "/assets/juicy/3.png",
+      "/assets/juicy/4.png"
     ]
   },
   {
-    "title": "Test",
-    "subtitle": "merchandise design",
-    "slug": "test",
-    "year": "2022",
-    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
+    "title": "Venues From The Future",
+    "subtitle": "Branding",
+    "slug": "venues-from-the-future",
+    "year": "2021",
+    "description": "Branding for the European project Venues From The Future, a collaboration between several small music venues across the European continent.",
     "seo": {
-      "title": "Juicy",
-      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
+      "title": "Venues From The Future",
+      "description": "Branding for the European project Venues From The Future."
+    },
+    "images": ["/assets/vftf/1.png", "/assets/vftf/2.png"]
+  },
+  {
+    "title": "Couleur Café",
+    "subtitle": "promotional sticker",
+    "slug": "couleur-café-promo",
+    "year": "2022",
+    "description": "A series of promotional stickers for Couleur Café, a music festival in Brussels. Each sticker displays one of the headlining artists, with a collage of elements that create an atmosphere that matches both the artist and the festival.",
+    "seo": {
+      "title": "Couleur Café",
+      "description": "A series of promotional stickers for Couleur Café."
     },
     "images": [
-      "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-      "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      "/assets/couleur/1.png",
+      "/assets/couleur/2.png",
+      "/assets/couleur/3.png",
+      "/assets/couleur/4.png",
+      "/assets/couleur/5.png"
     ]
   },
   {
-    "title": "Test 2",
-    "subtitle": "merchandise design",
-    "slug": "test-2",
+    "title": "Commander Spoon",
+    "subtitle": "????",
+    "slug": "commander-spoon",
     "year": "2022",
-    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
+    "description": "???",
     "seo": {
-      "title": "Juicy",
-      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
+      "title": "Commander Spoon",
+      "description": "???"
     },
     "images": [
-      "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
-      "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    ]
-  },
-  {
-    "title": "Merch",
-    "subtitle": "merchandise design",
-    "slug": "merch",
-    "year": "2022",
-    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
-    "seo": {
-      "title": "Juicy",
-      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1584448097764-374f81551427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    ]
-  },
-  {
-    "title": "This is a long title",
-    "subtitle": "merchandise design",
-    "slug": "mor",
-    "year": "2022",
-    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
-    "seo": {
-      "title": "Juicy",
-      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    ]
-  },
-  {
-    "title": "Test 3",
-    "subtitle": "merchandise design",
-    "slug": "test-3",
-    "year": "2022",
-    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
-    "seo": {
-      "title": "Juicy",
-      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
-      "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-      "https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+      "/assets/commander-spoon/1.png",
+      "/assets/commander-spoon/2.png",
+      "/assets/commander-spoon/3.png",
+      "/assets/commander-spoon/4.png",
+      "/assets/commander-spoon/5.png"
     ]
   }
 ]

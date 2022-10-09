@@ -57,7 +57,7 @@ const Home = ({ errors, items }: HomePageProps) => {
           {items?.map((item) => (
             <Card
               key={item.slug}
-              image={item.images?.[0]}
+              image={item.slug === 'juicy' ? '/assets/juicy/homepage.png' : item.images?.[0]}
               subtitle={item.subtitle}
               title={item.title}
               to={item.slug}

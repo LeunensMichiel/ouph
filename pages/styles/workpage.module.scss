@@ -10,6 +10,12 @@
   }
 }
 
+.info {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
 .title {
   font-size: 4rem;
 
@@ -30,6 +36,7 @@
 
 .description {
   font-weight: 500;
+  margin-top: 3rem;
 
   @include mixins.breakpoint-up(lg) {
     font-size: 3rem;

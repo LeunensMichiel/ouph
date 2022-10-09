@@ -13,7 +13,7 @@ const WorkPage = ({ errors, item }: WorkPageProps) => {
   return (
     <section className="container py-container--sm">
       <div className={styles.root}>
-        <article>
+        <article className={styles.info}>
           <h1 className={styles.title}>{item?.title}</h1>
           <span className={styles.year}>{item?.year}</span>
           <p className={styles.description}>{item?.description}</p>
