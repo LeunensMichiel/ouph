@@ -49,15 +49,31 @@
   font-weight: 400;
   font-size: 2rem;
   margin: 0;
-  line-height: 1;
+  hyphens: auto;
+  overflow: hidden;
+  display: block;
+  width: 100%;
 
-  @include mixins.breakpoint-up(md) {
+  @include mixins.breakpoint-up(lg) {
+    font-size: 3.5rem;
+  }
+
+  @include mixins.breakpoint-up(xl) {
+    font-size: 4.25rem;
+  }
+
+  @include mixins.breakpoint-up(xxl) {
     font-size: 5rem;
   }
 }
 
 .card__overlay-subtitle {
-  line-height: 1;
+  line-height: 1.1;
+  font-size: 1rem;
+
+  @include mixins.breakpoint-up(lg) {
+    font-size: inherit;
+  }
 }
 
 .card__image {

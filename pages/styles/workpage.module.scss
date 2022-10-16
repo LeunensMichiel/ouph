@@ -3,32 +3,40 @@
 .root {
   display: grid;
   min-height: 80vh;
+  gap: 2rem;
 
   @include mixins.breakpoint-up(md) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
 }
 
 .info {
   display: grid;
   align-content: start;
-  padding-right: 3rem;
+  min-width: 0;
+  overflow: hidden;
+  @include mixins.breakpoint-up(md) {
+    padding-right: 3rem;
+  }
 }
 
 .title {
-  font-size: 2.5rem;
   width: 100%;
-
-  @include mixins.breakpoint-up(xs) {
-    font-size: 3rem;
-  }
+  font-size: min(3.5rem, 13vw);
+  hyphens: auto;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 
   @include mixins.breakpoint-up(md) {
-    font-size: 3.5rem;
+    font-size: min(3.5rem, 6vw);
   }
 
   @include mixins.breakpoint-up(lg) {
-    font-size: min(7.5rem, 6.6vw);
+    font-size: min(7.5rem, 5.8vw);
   }
 }
 
@@ -46,6 +54,7 @@
   display: grid;
   align-content: start;
   gap: 2rem;
+  min-width: 0;
 }
 
 .image {

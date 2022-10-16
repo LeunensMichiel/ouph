@@ -9,15 +9,14 @@
 .contact__inner {
   display: grid;
   gap: 2rem;
-  padding: 0 3rem;
 
   h1 {
-    text-align: center;
     @include mixins.breakpoint-up(xs) {
       font-size: 3rem;
     }
 
     @include mixins.breakpoint-up(md) {
+      text-align: center;
       font-size: 3.5rem;
     }
 

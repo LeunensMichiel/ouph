@@ -33,7 +33,7 @@ export const Footer: FC<FooterProps> = ({ isHomePage, isWorkPage }) => {
         </span>
       ) : (
         <Link href="/">
-          <a>
+          <a className={styles.logo}>
             <Logo />
           </a>
         </Link>

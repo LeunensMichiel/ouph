@@ -12,14 +12,14 @@
 .landing__inner {
   display: grid;
   justify-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   margin-bottom: 4rem;
   z-index: 1;
   width: 100%;
 
   svg {
     width: 100%;
-    max-width: 260px;
+    max-width: 130px;
     height: auto;
   }
 
@@ -33,6 +33,11 @@
 .landing__text {
   display: inline-block;
   color: #ffffff;
+  font-size: 1rem;
+
+  @include mixins.breakpoint-up(md) {
+    font-size: inherit;
+  }
 }
 
 .landing__video {

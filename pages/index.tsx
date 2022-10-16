@@ -8,7 +8,7 @@ import { Card } from '../components/ui';
 
 const breakpointColumns = {
   default: 3,
-  '1023': 2,
+  '1143': 2,
   '639': 1,
 };
 

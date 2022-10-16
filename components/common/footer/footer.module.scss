@@ -6,7 +6,7 @@
   justify-items: center;
   align-items: end;
   gap: 3rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 
   svg {
     width: auto;
@@ -14,6 +14,7 @@
   }
 
   @include mixins.breakpoint-up(lg) {
+    font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -47,16 +48,19 @@
   text-align: center;
   width: 100%;
   color: #ffffff;
-  text-decoration: underline;
   line-height: 1;
 
   @include mixins.breakpoint-up(lg) {
     justify-self: end;
     text-align: end;
     text-decoration: none;
-    &--hover {
-      text-decoration: underline;
-    }
+  }
+}
+
+.logo {
+  display: none;
+  @include mixins.breakpoint-up(lg) {
+    display: block;
   }
 }
 
@@ -64,8 +68,14 @@
   display: grid;
   text-align: center;
   min-width: 33%;
+  gap: 0.25rem;
+
+  a {
+    min-width: 20ch;
+  }
 
   @include mixins.breakpoint-up(lg) {
+    gap: 0;
     justify-self: end;
     text-align: right;
   }
