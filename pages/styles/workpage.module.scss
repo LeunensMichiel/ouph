@@ -2,22 +2,17 @@
 
 .root {
   display: grid;
-  gap: 3rem;
   min-height: 80vh;
 
   @include mixins.breakpoint-up(md) {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @include mixins.breakpoint-up(xl) {
-    gap: 5rem;
-  }
 }
 
 .info {
   display: grid;
-  gap: 0.5rem;
   align-content: start;
+  padding-right: 3rem;
 }
 
 .title {
@@ -45,11 +40,6 @@
 
 .description {
   font-weight: 500;
-  margin-top: 3rem;
-
-  @include mixins.breakpoint-up(lg) {
-    font-size: 3rem;
-  }
 }
 
 .images {
@@ -63,17 +53,4 @@
   object-position: center;
   width: 100%;
   height: auto;
-}
-
-.footnote {
-  display: inline-block;
-  margin-top: 1.5rem;
-  font-size: 1.125rem;
-
-  @include mixins.breakpoint-up(md) {
-    font-size: inherit;
-  }
-  @include mixins.breakpoint-up(xl) {
-    margin-top: 0.25rem;
-  }
 }

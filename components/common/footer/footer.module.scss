@@ -6,10 +6,11 @@
   justify-items: center;
   align-items: end;
   gap: 3rem;
+  font-size: 1.3rem;
 
   svg {
     width: auto;
-    height: 4.5rem;
+    height: 3.875rem;
   }
 
   @include mixins.breakpoint-up(lg) {
@@ -45,7 +46,7 @@
 .socials {
   text-align: center;
   width: 100%;
-  color: var(--color-brand);
+  color: #ffffff;
   text-decoration: underline;
   line-height: 1;
 
@@ -57,4 +58,19 @@
       text-decoration: underline;
     }
   }
+}
+
+.links {
+  display: grid;
+  text-align: center;
+  min-width: 33%;
+
+  @include mixins.breakpoint-up(lg) {
+    justify-self: end;
+    text-align: right;
+  }
+}
+
+.footnote {
+  display: inline-block;
 }

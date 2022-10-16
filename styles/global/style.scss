@@ -42,7 +42,7 @@ html {
 
 html,
 body {
-  color: var(--color-brand);
+  color: #ffffff;
   background-color: #212121;
 }
 
@@ -93,6 +93,10 @@ b {
 }
 
 a {
-  color: var(--color-brand);
-  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -33,9 +33,6 @@ const WorkPage = ({ errors, item }: WorkPageProps) => {
           ))}
         </aside>
       </div>
-      <span className={styles.footnote}>
-        Thanks for scrolling till the end :)
-      </span>
     </section>
   );
 };

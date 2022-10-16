@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/future/image';
+import { clsx } from 'clsx';
 import styles from './styles/contact.module.scss';
 import { Layout } from '../components/common';
 
@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <NextSeo title="contact" />
-      <section className={styles.contact}>
+      <section className={clsx(styles.contact, 'container-page')}>
         <article className={styles.contact__inner}>
           <h1>Contact</h1>
           <p>
@@ -33,17 +33,6 @@ const Contact = () => {
             DM.
           </p>
         </article>
-        <aside>
-          <Image
-            className={styles.contact__image}
-            src="/assets/contact.jpg"
-            alt={`Old school seventies images of customer service`}
-            priority
-            width={1310}
-            height={1080}
-            quality={100}
-          />
-        </aside>
       </section>
     </>
   );

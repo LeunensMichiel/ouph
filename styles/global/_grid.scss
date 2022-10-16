@@ -39,3 +39,19 @@
     }
   }
 }
+
+.container-page {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include mixins.breakpoint-up(md) {
+    width: clamp(45ch, 100%, 85ch);
+  }
+  @include mixins.breakpoint-up(lg) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}

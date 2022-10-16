@@ -10,12 +10,16 @@ type Props = {
 export const Layout: FC<Props> = ({ children }) => {
   const router = useRouter();
   const isHomePage = router.pathname === '/';
+  const isWorkPage = router.pathname.startsWith('/work');
+  const isContactPage = router.pathname.startsWith('/contact');
 
   return (
     <>
       <Navbar isHomePage={isHomePage} />
       <main className={styles.root}>{children}</main>
-      <Footer isHomePage={isHomePage} />
+      {!isContactPage && (
+        <Footer isHomePage={isHomePage} isWorkPage={isWorkPage} />
+      )}
     </>
   );
 };

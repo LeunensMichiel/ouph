@@ -15,12 +15,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 
   a {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  svg {
+    height: auto;
+    width: 2.5rem;
   }
 }
 
@@ -29,9 +35,4 @@
   writing-mode: vertical-rl;
   text-orientation: sideways;
   text-decoration: none;
-}
-
-.logo {
-  width: 5rem;
-  height: auto;
 }

@@ -21,11 +21,11 @@ const Home = ({ errors, items }: HomePageProps) => {
   return (
     <>
       <NextSeo
-        title="ouph!"
+        title="ouph"
         titleTemplate="%s"
         description="Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design."
         openGraph={{
-          title: 'Ouph!',
+          title: 'Ouph',
           description:
             'Un studio de ouph! Ouph is a creative design studio based in Brussels, Belgium, specializing in branding and merchandise design.',
         }}
@@ -35,7 +35,7 @@ const Home = ({ errors, items }: HomePageProps) => {
           playsInline
           autoPlay
           muted
-          poster="/assets/card.jpg"
+          poster="/assets/poster.jpg"
           loop
           preload="auto"
           className={styles.landing__video}
@@ -57,7 +57,11 @@ const Home = ({ errors, items }: HomePageProps) => {
           {items?.map((item) => (
             <Card
               key={item.slug}
-              image={item.slug === 'juicy' ? '/assets/juicy/homepage.png' : item.images?.[0]}
+              image={
+                item.slug === 'juicy'
+                  ? '/assets/juicy/homepage.png'
+                  : item.images?.[0]
+              }
               subtitle={item.subtitle}
               title={item.title}
               to={item.slug}
