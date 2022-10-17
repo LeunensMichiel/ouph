@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Image from 'next/future/image';
 import { Layout } from '../../components/common';
 import data from '../../public/data.json';
 import styles from '../styles/workpage.module.scss';
@@ -20,14 +19,10 @@ const WorkPage = ({ errors, item }: WorkPageProps) => {
         </article>
         <aside className={styles.images}>
           {item?.images?.map((url, n) => (
-            <Image
+            <img
               className={styles.image}
               src={url}
               alt={`${item?.title} ${item?.subtitle} - image ${n + 1}`}
-              priority
-              width={400}
-              height={400}
-              quality={100}
               key={url}
             />
           ))}

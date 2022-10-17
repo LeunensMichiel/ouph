@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { FC } from 'react';
-import Image from 'next/future/image';
 import styles from './card.module.scss';
 
 type CardProps = {
@@ -14,15 +13,11 @@ export const Card: FC<CardProps> = ({ image, subtitle, title, to }) => {
   return (
     <Link href={`/work/${to}`}>
       <a className={styles.card}>
-        <Image
+        <img
           className={styles.card__image}
           src={image}
           alt={`${title} ${subtitle}`}
           title={title}
-          priority
-          width={400}
-          height={400}
-          quality={100}
         />
         <div className={styles.card__overlay}>
           <h2 className={styles['card__overlay-title']}>{title}</h2>

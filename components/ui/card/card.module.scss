@@ -57,14 +57,6 @@
   @include mixins.breakpoint-up(lg) {
     font-size: 3.5rem;
   }
-
-  @include mixins.breakpoint-up(xl) {
-    font-size: 4.25rem;
-  }
-
-  @include mixins.breakpoint-up(xxl) {
-    font-size: 5rem;
-  }
 }
 
 .card__overlay-subtitle {
