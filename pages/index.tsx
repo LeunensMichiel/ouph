@@ -47,28 +47,6 @@ const Home = ({ errors, items }: HomePageProps) => {
           <Logo />
         </div>
       </section>
-      <section className="container py-container">
-        {errors && <p>Error displaying items</p>}
-        <Masonry
-          breakpointCols={breakpointColumns}
-          className="masonry-grid"
-          columnClassName="masonry-grid_column"
-        >
-          {items?.map((item) => (
-            <Card
-              key={item.slug}
-              image={
-                item.slug === 'juicy'
-                  ? '/assets/juicy/homepage.png'
-                  : item.images?.[0]
-              }
-              subtitle={item.subtitle}
-              title={item.title}
-              to={item.slug}
-            />
-          ))}
-        </Masonry>
-      </section>
     </>
   );
 };

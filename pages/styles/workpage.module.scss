@@ -3,7 +3,9 @@
 .root {
   display: grid;
   min-height: 80vh;
+  align-items: start;
   gap: 2rem;
+  padding-top: 5rem;
 
   @include mixins.breakpoint-up(md) {
     grid-template-columns: repeat(2, 1fr);
@@ -16,7 +18,11 @@
   align-content: start;
   min-width: 0;
   overflow: hidden;
+
   @include mixins.breakpoint-up(md) {
+    position: sticky;
+    // padding top + height of header
+    top: 7.5rem;
     padding-right: 3rem;
   }
 }
@@ -48,6 +54,9 @@
 
 .description {
   font-weight: 500;
+  @include mixins.breakpoint-up(lg) {
+    font-size: 3rem;
+  }
 }
 
 .images {
@@ -62,4 +71,8 @@
   object-position: center;
   width: 100%;
   height: auto;
+}
+
+.footnote {
+  display: inline-block;
 }

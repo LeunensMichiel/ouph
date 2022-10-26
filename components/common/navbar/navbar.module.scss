@@ -1,21 +1,17 @@
+@use '../../../styles/mixins';
+
 .root {
   width: 100%;
-}
-
-.homepage {
-  position: absolute;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  position: fixed;
   z-index: 10;
-
-  .nav {
-    justify-content: flex-end;
-  }
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  align-items: flex-start;
 
   a {
     text-decoration: none;
@@ -35,4 +31,49 @@
   writing-mode: vertical-rl;
   text-orientation: sideways;
   text-decoration: none;
+}
+
+.clients {
+  display: grid;
+  line-height: 1.1;
+  text-align: center;
+
+  @include mixins.breakpoint-up(lg) {
+    justify-self: start;
+    text-align: start;
+  }
+}
+
+.client {
+  font-family: var(--font-family-alt);
+}
+
+.socials {
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  line-height: 1;
+
+  @include mixins.breakpoint-up(lg) {
+    justify-self: end;
+    text-align: end;
+    text-decoration: none;
+  }
+}
+
+.links {
+  display: grid;
+  text-align: center;
+  min-width: 33%;
+  gap: 0.25rem;
+
+  a {
+    min-width: 20ch;
+  }
+
+  @include mixins.breakpoint-up(lg) {
+    gap: 0;
+    justify-self: end;
+    text-align: right;
+  }
 }
