@@ -1,8 +1,7 @@
 @use '../../styles/mixins';
 
 .landing {
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -57,7 +56,6 @@
   object-fit: cover;
   object-position: 50% 50%;
   height: 100%;
-  max-height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -67,7 +65,7 @@
 
 .landing__portfolio {
   position: absolute;
-  top: calc(100vh - 1.5rem);
+  top: calc(100% - 1.5rem);
   z-index: 2;
   left: 50%;
   width: 100%;
@@ -78,7 +76,7 @@
   align-items: start;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 33vh;
+  padding-bottom: 40vh;
   max-height: 90vh;
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -89,8 +87,12 @@
   scrollbar-width: 'none'; /*Firefox*/
 
   @include mixins.breakpoint-up(md) {
-    top: calc(100vh - 3.5rem);
+    top: calc(100% - 3.5rem);
     max-height: 80vh;
+  }
+
+  @include mixins.breakpoint-up(lg) {
+    padding-bottom: 33vh;
   }
 }
 
