@@ -80,6 +80,7 @@ const Home = ({ errors, items }: HomePageProps) => {
               <span className={styles.client}>Otto Kintet</span>
             </div>
             <div className={styles.links}>
+              <Link href="/contact">Contact us</Link>
               <a
                 onMouseEnter={() => setSocialText('@ouph.studio')}
                 onTouchStart={() => setSocialText('@ouph.studio')}
@@ -95,7 +96,6 @@ const Home = ({ errors, items }: HomePageProps) => {
               >
                 {socialText}
               </a>
-              <Link href="/contact">Contact us</Link>
             </div>
           </nav>
           <motion.div
