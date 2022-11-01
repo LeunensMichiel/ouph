@@ -30,9 +30,9 @@
   display: grid;
   justify-items: center;
   width: 100%;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   position: fixed;
-  top: 0;
+  top: 50%;
   pointer-events: none;
 }
 
@@ -43,7 +43,7 @@
   font-weight: 500;
   letter-spacing: -0.2px;
   margin-bottom: -2rem;
-  min-height: 2rem;
+  min-height: 4rem;
 
   @include mixins.breakpoint-up(md) {
     font-size: inherit;

@@ -18,9 +18,10 @@ const Home = ({ errors, items }: HomePageProps) => {
   const { scrollYProgress } = useScroll({ container: innerContainer });
   const [socialText, setSocialText] = useState("we're also on instagram :)");
 
-  const height = useTransform(scrollYProgress, [0, 1], ['100%', '0%']);
+  const height = useTransform(scrollYProgress, [0, 1.2], ['100%', '5%']);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const translateLogo = useTransform(scrollYProgress, [0, 1], ['50%', '0%']);
+  const topLogo = useTransform(scrollYProgress, [0, 1], ['50%', '0%']);
+  const yLogo = useTransform(scrollYProgress, [0, 1], ['-55%', '0%']);
 
   const itemAnim = {
     hover: { y: -8 },
@@ -85,7 +86,7 @@ const Home = ({ errors, items }: HomePageProps) => {
           </nav>
           <motion.div
             className={styles.landing__logo__text}
-            style={{ y: translateLogo }}
+            style={{ top: topLogo, y: yLogo }}
           >
             <motion.span
               className={styles.landing__text}
