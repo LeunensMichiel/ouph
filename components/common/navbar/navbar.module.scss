@@ -6,6 +6,7 @@
   padding: 2rem 0;
   position: fixed;
   z-index: 10;
+  pointer-events: none;
 }
 
 .nav {
@@ -15,6 +16,7 @@
 
   a {
     text-decoration: none;
+    pointer-events: all;
     &:hover {
       text-decoration: underline;
     }
@@ -31,6 +33,7 @@
   writing-mode: vertical-rl;
   text-orientation: sideways;
   text-decoration: none;
+  pointer-events: all;
 }
 
 .clients {
@@ -46,6 +49,7 @@
 
 .client {
   font-family: var(--font-family-alt);
+  pointer-events: all;
 }
 
 .socials {
@@ -53,6 +57,7 @@
   width: 100%;
   color: #ffffff;
   line-height: 1;
+  pointer-events: all;
 
   @include mixins.breakpoint-up(lg) {
     justify-self: end;
@@ -69,6 +74,7 @@
 
   a {
     min-width: 20ch;
+    pointer-events: all;
   }
 
   @include mixins.breakpoint-up(lg) {

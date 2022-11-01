@@ -1,16 +1,10 @@
 import { NextSeo } from 'next-seo';
-import Masonry from 'react-masonry-css';
 import { GetStaticProps } from 'next';
+import { useScroll, motion, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 import styles from './styles/index.module.scss';
 import { Layout, Logo } from '../components/common';
 import data from '../public/data.json';
-import { Card } from '../components/ui';
-
-const breakpointColumns = {
-  default: 3,
-  '1143': 2,
-  '639': 1,
-};
 
 type HomePageProps = {
   items?: Array<typeof data[0]>;
@@ -18,6 +12,18 @@ type HomePageProps = {
 };
 
 const Home = ({ errors, items }: HomePageProps) => {
+  const innerContainer = useRef(null);
+  const { scrollYProgress } = useScroll({ container: innerContainer });
+
+  const height = useTransform(scrollYProgress, [0, 0.4], ['100%', '0%']);
+  const opacity = useTransform(scrollYProgress, [0, 0.33], [1, 0]);
+  const translateLogo = useTransform(scrollYProgress, [0, 0.33], ['50%', '0%']);
+
+  const itemAnim = {
+    hover: { y: -8 },
+    initial: { y: 0 },
+  };
+
   return (
     <>
       <NextSeo
@@ -42,10 +48,38 @@ const Home = ({ errors, items }: HomePageProps) => {
         >
           <source src="/assets/landing_video.mp4" type="video/mp4" />
         </video>
-        <div className={styles.landing__inner}>
-          <span className={styles.landing__text}>un website de</span>
-          <Logo />
-        </div>
+        <motion.div
+          className={styles.landing__inner}
+          layoutScroll
+          ref={innerContainer}
+        >
+          <motion.div
+            className={styles.landing__logo__text}
+            style={{ y: translateLogo }}
+          >
+            <motion.span
+              className={styles.landing__text}
+              style={{ opacity, height }}
+            >
+              un website de
+            </motion.span>
+            <Logo style={{ height }} />
+          </motion.div>
+          <div className={styles.landing__portfolio}>
+            {items?.map((item) => (
+              <motion.a
+                className={styles.landing__portfolio__item}
+                key={item.title}
+                href={`/work/${item.slug}`}
+                variants={itemAnim}
+                initial="initial"
+                whileHover="hover"
+              >
+                {item.title}
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
       </section>
     </>
   );

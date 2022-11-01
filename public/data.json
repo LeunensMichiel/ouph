@@ -1,34 +1,5 @@
 [
   {
-    "title": "Juicy",
-    "subtitle": "merchandise",
-    "slug": "juicy",
-    "year": "2022",
-    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
-    "seo": {
-      "title": "Juicy",
-      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
-    },
-    "images": [
-      "/assets/juicy/1.png",
-      "/assets/juicy/2.png",
-      "/assets/juicy/3.png",
-      "/assets/juicy/4.png"
-    ]
-  },
-  {
-    "title": "Venues From The Future",
-    "subtitle": "Branding",
-    "slug": "venues-from-the-future",
-    "year": "2021",
-    "description": "Branding for the European project Venues From The Future, a collaboration between several small music venues across the European continent.",
-    "seo": {
-      "title": "Venues From The Future",
-      "description": "Branding for the European project Venues From The Future."
-    },
-    "images": ["/assets/vftf/1.png", "/assets/vftf/2.png"]
-  },
-  {
     "title": "Couleur Café",
     "subtitle": "promotional sticker",
     "slug": "couleur-café-promo",
@@ -44,6 +15,23 @@
       "/assets/couleur/3.png",
       "/assets/couleur/4.png",
       "/assets/couleur/5.png"
+    ]
+  },
+  {
+    "title": "Juicy",
+    "subtitle": "merchandise",
+    "slug": "juicy",
+    "year": "2022",
+    "description": "Merchandise design for Juicy and their ‘Mobile’ tour.",
+    "seo": {
+      "title": "Juicy",
+      "description": "Merchandise design for Juicy and their ‘Mobile’ tour."
+    },
+    "images": [
+      "/assets/juicy/1.png",
+      "/assets/juicy/2.png",
+      "/assets/juicy/3.png",
+      "/assets/juicy/4.png"
     ]
   },
   {
@@ -63,5 +51,17 @@
       "/assets/commander-spoon/4.png",
       "/assets/commander-spoon/5.png"
     ]
+  },
+  {
+    "title": "Venues From The Future",
+    "subtitle": "Branding",
+    "slug": "venues-from-the-future",
+    "year": "2021",
+    "description": "Branding for the European project Venues From The Future, a collaboration between several small music venues across the European continent.",
+    "seo": {
+      "title": "Venues From The Future",
+      "description": "Branding for the European project Venues From The Future."
+    },
+    "images": ["/assets/vftf/1.png", "/assets/vftf/2.png"]
   }
 ]
