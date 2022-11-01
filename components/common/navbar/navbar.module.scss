@@ -3,9 +3,13 @@
 .root {
   width: 100%;
   font-size: 1.5rem;
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
   z-index: 10;
+
+  @include mixins.breakpoint-up(md) {
+    padding: 2rem;
+  }
 }
 
 .nav {
@@ -22,6 +26,11 @@
 
   svg {
     height: auto;
-    width: 2.5rem;
+    width: 2rem;
+  }
+  @include mixins.breakpoint-up(md) {
+    svg {
+      width: 2.5rem;
+    }
   }
 }

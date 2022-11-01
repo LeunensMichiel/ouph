@@ -7,6 +7,7 @@ import Link from 'next/link';
 import styles from './styles/index.module.scss';
 import { Layout, Logo } from '../components/common';
 import data from '../public/data.json';
+import { Instagram, Mail } from '../components/icons';
 
 type HomePageProps = {
   items?: Array<typeof data[0]>;
@@ -58,6 +59,19 @@ const Home = ({ errors, items }: HomePageProps) => {
           ref={innerContainer}
         >
           <nav className={clsx(styles.custom__nav)}>
+            <a
+              href="https://www.instagram.com/ouph.studio/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.icon}
+            >
+              <Instagram />
+            </a>
+            <Link href="/contact">
+              <a className={styles.icon}>
+                <Mail />
+              </a>
+            </Link>
             <div className={styles.clients}>
               <span>Other clients include:</span>
               <span className={styles.client}>De Vaartkapoen</span>
