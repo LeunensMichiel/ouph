@@ -13,7 +13,7 @@ export const Layout: FC<Props> = ({ children }) => {
 
   return (
     <>
-      <Navbar isHomePage={isHomePage} />
+      {!isHomePage && <Navbar />}
       <main className={styles.root}>{children}</main>
     </>
   );

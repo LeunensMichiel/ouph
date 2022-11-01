@@ -1,7 +1,9 @@
 import { NextSeo } from 'next-seo';
 import { GetStaticProps } from 'next';
 import { useScroll, motion, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import clsx from 'clsx';
+import Link from 'next/link';
 import styles from './styles/index.module.scss';
 import { Layout, Logo } from '../components/common';
 import data from '../public/data.json';
@@ -14,10 +16,11 @@ type HomePageProps = {
 const Home = ({ errors, items }: HomePageProps) => {
   const innerContainer = useRef(null);
   const { scrollYProgress } = useScroll({ container: innerContainer });
+  const [socialText, setSocialText] = useState("we're also on instagram :)");
 
-  const height = useTransform(scrollYProgress, [0, 0.4], ['100%', '0%']);
-  const opacity = useTransform(scrollYProgress, [0, 0.33], [1, 0]);
-  const translateLogo = useTransform(scrollYProgress, [0, 0.33], ['50%', '0%']);
+  const height = useTransform(scrollYProgress, [0, 1], ['100%', '0%']);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const translateLogo = useTransform(scrollYProgress, [0, 1], ['50%', '0%']);
 
   const itemAnim = {
     hover: { y: -8 },
@@ -53,6 +56,33 @@ const Home = ({ errors, items }: HomePageProps) => {
           layoutScroll
           ref={innerContainer}
         >
+          <nav className={clsx(styles.custom__nav)}>
+            <div className={styles.clients}>
+              <span>Other clients include:</span>
+              <span className={styles.client}>De Vaartkapoen</span>
+              <span className={styles.client}>Lord Byron</span>
+              <span className={styles.client}>JhMj DAR</span>
+              <span className={styles.client}>Otto Kintet</span>
+            </div>
+            <div className={styles.links}>
+              <a
+                onMouseEnter={() => setSocialText('@ouph.studio')}
+                onTouchStart={() => setSocialText('@ouph.studio')}
+                onMouseLeave={() => setSocialText("we're also on instagram :)")}
+                onTouchEnd={() => setSocialText("we're also on instagram :)")}
+                className={clsx(
+                  styles.socials,
+                  socialText === '@ouph.studio' && styles['socials--hover']
+                )}
+                href="https://www.instagram.com/ouph.studio/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {socialText}
+              </a>
+              <Link href="/contact">Contact us</Link>
+            </div>
+          </nav>
           <motion.div
             className={styles.landing__logo__text}
             style={{ y: translateLogo }}

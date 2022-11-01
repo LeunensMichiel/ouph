@@ -3,10 +3,9 @@
 .root {
   width: 100%;
   font-size: 1.5rem;
-  padding: 2rem 0;
+  padding: 2rem;
   position: fixed;
   z-index: 10;
-  pointer-events: none;
 }
 
 .nav {
@@ -16,7 +15,6 @@
 
   a {
     text-decoration: none;
-    pointer-events: all;
     &:hover {
       text-decoration: underline;
     }
@@ -25,61 +23,5 @@
   svg {
     height: auto;
     width: 2.5rem;
-  }
-}
-
-.link-contact {
-  color: #ffffff;
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-  text-decoration: none;
-  pointer-events: all;
-}
-
-.clients {
-  display: grid;
-  line-height: 1.1;
-  text-align: center;
-
-  @include mixins.breakpoint-up(lg) {
-    justify-self: start;
-    text-align: start;
-  }
-}
-
-.client {
-  font-family: var(--font-family-alt);
-  pointer-events: all;
-}
-
-.socials {
-  text-align: center;
-  width: 100%;
-  color: #ffffff;
-  line-height: 1;
-  pointer-events: all;
-
-  @include mixins.breakpoint-up(lg) {
-    justify-self: end;
-    text-align: end;
-    text-decoration: none;
-  }
-}
-
-.links {
-  display: grid;
-  text-align: center;
-  min-width: 33%;
-  gap: 0.25rem;
-
-  a {
-    min-width: 20ch;
-    pointer-events: all;
-  }
-
-  @include mixins.breakpoint-up(lg) {
-    gap: 0;
-    justify-self: end;
-    text-align: right;
   }
 }
