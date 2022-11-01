@@ -81,6 +81,12 @@
   padding-bottom: 33vh;
   max-height: 90vh;
   overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: 'none';
+    width: 0;
+  }
+  -ms-oveflow-style: 'none'; /*IE and Edge*/
+  scrollbar-width: 'none'; /*Firefox*/
 
   @include mixins.breakpoint-up(md) {
     top: calc(100vh - 3.5rem);
